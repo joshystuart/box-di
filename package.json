@@ -1,7 +1,7 @@
 {
     "name": "box-di",
     "description": "A wrapper around kontainer-di module that allows decorators to inject dependencies. I wanted to encourage the use of the factory pattern when using DI so that your classes can be reused and tested without framework dependencies ie. es7 decorators etc",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Josh Stuart <crimsonronin@gmail.com>",
     "keywords": [
         "di",
@@ -16,6 +16,7 @@
         "type": "git",
         "url": "https://github.com/crimsonronin/box-di.git"
     },
+    "main": "./dist/index.js",
     "babel": {
         "presets": [
             "es2015",
@@ -38,7 +39,6 @@
         "kontainer-di": "^0.9.9",
         "lodash": "^4.11.1"
     },
-    "main": "./dist/index.js",
     "devDependencies": {
         "babel-cli": "^6.3.17",
         "babel-eslint": "5.0.0-beta9",
