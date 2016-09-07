@@ -1,7 +1,7 @@
 {
   "name": "box-di",
   "description": "A wrapper around kontainer-di module that allows decorators to inject dependencies. I wanted to encourage the use of the factory pattern when using DI so that your classes can be reused and tested without framework dependencies ie. es7 decorators etc",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "author": "Josh Stuart <crimsonronin@gmail.com>",
   "keywords": [
     "di",
@@ -36,7 +36,6 @@
     "test": "./node_modules/.bin/babel-node ./example/example.js"
   },
   "dependencies": {
-    "kontainer-di": "^0.9.9",
     "lodash": "^4.11.1",
     "winston": "^2.2.0"
   },
