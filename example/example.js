@@ -9,7 +9,7 @@ Box.setLogger(winston);
 
 Box.register('config', Config);
 Box.register('test', TestFactory);
-Box.registerInvokeable('invokableTest', InvokableTest, ['config']);
+Box.registerInvokable('invokableTest', InvokableTest, ['config']);
 
 const test1 = Box.get('test');
 console.log(`test1: ${JSON.stringify(test1.getConfig())}`);
