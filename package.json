@@ -1,7 +1,7 @@
 {
   "name": "box-di",
   "description": "A wrapper around kontainer-di module that allows decorators to inject dependencies. I wanted to encourage the use of the factory pattern when using DI so that your classes can be reused and tested without framework dependencies ie. es7 decorators etc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Josh Stuart <crimsonronin@gmail.com>",
   "keywords": [
     "di",
@@ -28,6 +28,8 @@
     ]
   },
   "scripts": {
+    "babel-node": "babel-node",
+    "start": "nodemon --exec npm run babel-node -- ./example/example.js",
     "build-server": "babel ./index.js --out-dir ./dist && babel ./lib --out-dir ./dist/lib && babel ./example --out-dir ./dist/example",
     "build": "npm run clean && npm run build-server",
     "clean": "rm -rf ./dist && mkdir ./dist",
@@ -48,6 +50,7 @@
     "babel-preset-stage-1": "^6.5.0",
     "babel-register": "^6.3.13",
     "eslint": "^1.10.3",
-    "eslint-config-etaskr": "^1.0.2"
+    "eslint-config-etaskr": "^1.0.2",
+    "nodemon": "^1.12.1"
   }
 }

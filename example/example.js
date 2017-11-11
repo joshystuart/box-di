@@ -8,6 +8,7 @@ winston.level = 'debug';
 Box.setLogger(winston);
 
 Box.register('config', Config);
+
 Box.register('test', TestFactory);
 Box.registerInvokable('invokableTest', InvokableTest, ['config']);
 
@@ -23,3 +24,7 @@ console.log(`Is test1 and test2 the same: ${test1 === test2}`);
 const invokableTest = Box.get('invokableTest');
 console.log(`invokableTest.getData: ${invokableTest.getData()}`);
 console.log(`invokableTest.getConfig: ${JSON.stringify(invokableTest.getConfig())}`);
+
+
+const deepConfigTest = Box.get('config.deep.foo');
+console.log(`This is a deep object property test: ${deepConfigTest}`);
