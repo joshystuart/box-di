@@ -1,7 +1,7 @@
 {
   "name": "box-di",
-  "description": "A wrapper around kontainer-di module that allows decorators to inject dependencies. I wanted to encourage the use of the factory pattern when using DI so that your classes can be reused and tested without framework dependencies ie. es7 decorators etc",
-  "version": "0.1.2",
+  "description": "A DI container that works",
+  "version": "0.1.3",
   "author": "Josh Stuart <crimsonronin@gmail.com>",
   "keywords": [
     "di",
