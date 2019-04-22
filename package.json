@@ -25,11 +25,17 @@
     "clean": "rimraf ./dist",
     "prepublish": "yarn build",
     "lint": "./node_modules/.bin/eslint ./lib",
+    "prettier": "./node_modules/.bin/prettier --write \"{lib,example}/**/*.{js,jsx,ts,tsx}\"",
     "test": "./node_modules/.bin/babel-node ./example/example.js"
   },
   "dependencies": {
     "@babel/polyfill": "7.4.3",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.find": "^4.6.0",
+    "lodash.foreach": "^4.5.0",
+    "lodash.get": "^4.4.2",
     "lodash.isfunction": "3.0.9",
+    "lodash.isundefined": "^3.0.1",
     "winston": "3.2.1"
   },
   "devDependencies": {
@@ -41,6 +47,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.17.2",
     "nodemon": "^1.12.1",
     "prettier": "^1.17.0",

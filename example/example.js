@@ -1,8 +1,10 @@
+/* eslint-ignore-file */
 import winston from 'winston';
 import TestFactory from './test-factory';
 import InvokableTest from './invokable-test';
 import Config from './config';
 import Box from '../lib/box';
+
 winston.level = 'debug';
 
 Box.setLogger(winston);
@@ -24,7 +26,6 @@ console.log(`Is test1 and test2 the same: ${test1 === test2}`);
 const invokableTest = Box.get('invokableTest');
 console.log(`invokableTest.getData: ${invokableTest.getData()}`);
 console.log(`invokableTest.getConfig: ${JSON.stringify(invokableTest.getConfig())}`);
-
 
 const deepConfigTest = Box.get('config.deep.foo');
 console.log(`This is a deep object property test: ${deepConfigTest}`);
