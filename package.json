@@ -1,7 +1,7 @@
 {
   "name": "box-di",
   "description": "A DI container that works",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Josh Stuart <crimsonronin@gmail.com>",
   "keywords": [
     "di",
