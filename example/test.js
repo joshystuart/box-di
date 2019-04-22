@@ -3,16 +3,16 @@
  * frameworks, which allows it to be tested very cleanly and easily (ie. just pass in the mock config in your tests)!
  */
 class Test {
-    /**
-     * @param config
-     */
-    constructor(config) {
-        this._config = config;
-    }
+  /**
+   * @param config
+   */
+  constructor(config) {
+    this._config = config;
+  }
 
-    getConfig() {
-        return this._config;
-    }
+  getConfig() {
+    return this._config;
+  }
 }
 
 export default Test;

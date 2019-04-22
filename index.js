@@ -1,17 +1,20 @@
 import Box from './lib/box';
 import inject from './lib/inject';
-import {scope, prototype, singleton} from './lib/scope';
+import { scope } from './lib/scope';
+import { prototype, singleton } from './lib/scope-constants';
 import FactoryInterface from './lib/factory-interface';
 
 // es5 export
 export default {
-    Box: Box,
-    inject: inject,
-    scope: scope,
-    prototype: prototype,
-    singleton: singleton,
-    FactoryInterface: FactoryInterface
+  Box,
+  inject,
+  scope,
+  prototype,
+  singleton,
+  FactoryInterface,
 };
 
 // es6 exports
-export {Box, inject, scope, singleton, prototype, FactoryInterface};
+export {
+  Box, inject, scope, singleton, prototype, FactoryInterface,
+};
