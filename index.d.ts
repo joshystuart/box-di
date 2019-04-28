@@ -1,5 +1,5 @@
 declare namespace b {
-  var Box: IBox;
+  var Box: IDiContainer;
 
   interface ILogger {
     log(...args: any): void;
@@ -13,7 +13,7 @@ declare namespace b {
     warn(...args: any): void;
   }
 
-  interface IBox {
+  interface IDiContainer {
     setLogger(logger: ILogger): void;
 
     get<T>(serviceName: string): T;
