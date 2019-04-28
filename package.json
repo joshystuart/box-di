@@ -1,7 +1,7 @@
 {
   "name": "box-di",
   "description": "A DI container that works",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Josh Stuart <crimsonronin@gmail.com>",
   "keywords": [
     "di",
@@ -20,8 +20,8 @@
   "scripts": {
     "babel-node": "babel-node",
     "start": "nodemon --exec npm run babel-node -- ./example/example.js",
-    "build-server": "babel ./index.js --out-dir ./dist && babel ./lib --out-dir ./dist/lib && babel ./example --out-dir ./dist/example",
-    "build": "yarn clean && yarn build-server",
+    "build:server": "babel ./index.js --out-dir ./dist && babel ./lib --out-dir ./dist/lib && babel ./example --out-dir ./dist/example",
+    "build": "yarn clean && yarn build:server",
     "clean": "rimraf ./dist",
     "prepublish": "yarn build",
     "lint": "./node_modules/.bin/eslint ./lib",
